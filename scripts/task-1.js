@@ -13,10 +13,10 @@ console.log(typeof maritalStatus, maritalStatus)
 console.log(typeof myName, myName)
 
 const nullValue = null
-const undefinedValue
+let undefinedValue
 
-console.log(typeof nullValuem)
-console.log(typeof undefinedValuem)
+console.log(typeof nullValue, nullValue)
+console.log(typeof undefinedValue, undefinedValue)
 
 //7
 const username = prompt('Enter you username:')
@@ -25,9 +25,9 @@ const password = prompt('Enter your password:')
 alert(`Dear ${username}, your email is ${email}, your password is ${password}`)
 
 //8
-const secInHour = 60 * 60;
-const secInDay = secInHour * 24;
-const secInMonth = secInDay * 30;
+const secInHour = 60 * 60
+const secInDay = secInHour * 24
+const secInMonth = secInDay * 30
 
 console.log(`Seconds in hour: ${secInHour}`)
 console.log(`Seconds in day: ${secInDay}`)
