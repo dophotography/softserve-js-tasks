@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; text-align: center; justify-content: space-between;"
+        class="text">
+        <form id="refillForm">
+            <div style="display: flex; flex-direction: column;">
+                <label for="refill-amout">Enter the refill amount: </label>
+                <input type="text" id="refillAmount" name="refillAmount">
+            </div>
+
+            <button type="button" id="submitRefill">Submit</button>
+        </form>
+
+        <form id="textForm">
+            <div style="display: flex; flex-direction: column;">
+                <label for="text-input">Enter the text here: </label>
+                <input type="text" id="textInput" name="textInput">
+
+                <label for="text-color">Enter the color of the text here: </label>
+                <input type="text" id="textColor" name="textColor">
+
+                <label for="marker-capacity">Enter the marker capacity: </label>
+                <input type="text" id="markerCapacity" name="markerCapacity">
+            </div>
+
+            <button type="button" id="submitText">Submit</button>
+        </form>
+
+        <div id="output"></div>
+
+    </div>
+    <script src="task-5.js"></script>
+</body>
+
+</html>
