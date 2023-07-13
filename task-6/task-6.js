@@ -50,7 +50,7 @@
 // const button = document.getElementById('change-body')
 
 // window.onload = () => {
-    
+
 
 //     const body = document.createElement('body')
 //     const main = document.createElement('main')
@@ -70,4 +70,84 @@
 //     document.documentElement.replaceChild(body, document.body)
 // }
 
+//4
+// const btnSubmit = document.querySelector('input[type="submit"]')
+// const outputContainer = document.querySelector('.output')
+// const outputBlock = document.createElement('p')
+// outputBlock.classList.add('text-output')
+// outputContainer.appendChild(outputBlock)
 
+// class User {
+//     constructor(fullName, phone, birthday, email) {
+//         this.fullName = fullName
+//         this.phone = phone
+//         this.birthday = birthday
+//         this.email = email
+//     }
+
+//     set fullName(newName) {
+//         this._fullName = newName
+//     }
+
+//     get fullName() {
+//         return `${this._fullName}`
+//     }
+
+//     set phone(newPhone) {
+//         this._phone = newPhone
+//     }
+
+//     get phone() {
+//         return `${this._phone}`
+//     }
+
+//     set birthday(newBirthday) {
+//         this._birthday = newBirthday
+//     }
+
+//     get birthday() {
+//         return `${this._birthday}`
+//     }
+
+//     set email(email) {
+//         this._email = email
+//     }
+
+//     get email() {
+//         return `${this._email}`
+//     }
+
+//     output() {
+//         return `Full name: ${this.fullName}\nPhone number: ${this.phone}\nDate of birth: ${this.birthday}\nE-mail: ${this.email}\n\n`
+//     }
+
+// }
+
+// btnSubmit.addEventListener('click', () => {
+//     outputBlock.textContent = ''
+//     let outputUsers = []
+//     const userName = document.querySelector('input[name="name"]').value
+//     const userPhone = document.querySelector('input[name="phone"]').value
+//     const userBirthday = document.querySelector('input[name="birthday"]').value
+//     const userEmail = document.querySelector('input[name="email"]').value
+
+//     try {
+//         const user = new User(userName, userPhone, userBirthday, userEmail)
+//         outputUsers.push(user.output())
+//     } catch (err) {
+//         console.error(err)
+//     }
+
+//     for (const user of outputUsers) {
+//         outputContainer.innerText += `${user}`
+//     }
+// })
+
+//5
+// const circles = document.querySelectorAll('div.circle')
+
+// circles.forEach(circle => {
+//     circle.classList.add(circle.getAttribute('data-anim'))
+// })
+
+//6
