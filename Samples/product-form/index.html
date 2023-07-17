@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-EN-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://osakalehusky.com/uploads/162b3230da3937258407_1655907085.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Create Your Product</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Create Product</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Example pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Empty page</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Contacts</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="home">
+            <h2 class="mt-4">Create Product Form</h2>
+            <form name="creationForm">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Name</label>
+                            <input name="name" type="text" class="form-control" id="nameInput"
+                                placeholder="Enter product name">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="mb-3">
+                            <label for="priceInput" class="form-label">Price ($)</label>
+                            <input name="price" type="number" class="form-control" id="priceInput"
+                                placeholder="Enter product price ($)">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3 form-check">
+                            <input name="inStock" type="checkbox" class="form-check-input" id="stockCheck">
+                            <label class="form-check-label" for="stockCheck">In Stock</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <button type="reset" class="btn btn-secondary w-100 mt-2">Clear</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <button type="submit" class="btn btn-success w-100 mt-2">Create</button>
+                    </div>
+                </div>
+            </form>
+
+            <hr>
+
+            <h2 class="mb-2">Product catalog</h2>
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Avalability</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody"></tbody>
+            </table>
+            <button type="button" id="clearAllBtn" class="btn btn-danger">Clear All</button>
+        </div>
+
+        <div class="about">
+            <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="aboutModalLabel">About project</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                This web-based application allows you to create new products and display them in a catalog table. You can easily enter the name and price of a product using the provided form, and indicate whether it is in stock by checking the corresponding checkbox. When you submit the form, a new product is created and added to the catalog table.<br><br>
+                              
+                                Each product in the table is assigned a unique number for easy identification. The table displays the product number, name, price, and availability. The availability is indicated by a badge, showing <strong>In Stock</strong> or <strong>Out Of Stock</strong> based on your selection.<br><br>
+                              
+                                If you want to start fresh and remove all the products from the table, simply click the <strong>Clear All</strong> button. This action will clear the table and reset the product numbering.<br><br>
+                              
+                                The project features a user-friendly interface with a navigation bar for easy access. You can learn more about the project by clicking the <strong>About</strong> link in the navigation bar, which opens a modal window with additional information.<br><br>
+
+                                Enjoy creating and managing your product catalog effortlessly with this <strong>Object-Oriented JavaScript</strong> application!
+                              </p>
+                              
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
